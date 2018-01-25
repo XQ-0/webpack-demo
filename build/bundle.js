@@ -65,50 +65,71 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__sum__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__addImage__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__addImage___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__addImage__);
 
 
-console.log(Object(__WEBPACK_IMPORTED_MODULE_0__sum__["a" /* default */])(1, 2))
+var _sum = __webpack_require__(1);
+
+var _sum2 = _interopRequireDefault(_sum);
+
+var _addImage = __webpack_require__(2);
+
+var _addImage2 = _interopRequireDefault(_addImage);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+console.log((0, _sum2.default)(1, 2));
 
 /***/ }),
 /* 1 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony default export */ __webpack_exports__["a"] = ((a, b) => {
-    return a + b
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
 });
+
+exports.default = function (a, b) {
+    return a + b;
+};
 
 /***/ }),
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
-let smallImg = document.createElement('img')
-// 必须 require 进来
-smallImg.src = __webpack_require__(3)
-document.body.appendChild(smallImg)
+"use strict";
 
-let bigImg = document.createElement('img')
-bigImg.src = __webpack_require__(4)
-document.body.appendChild(bigImg)
+
+__webpack_require__(3);
+
+var smallImg = document.createElement('img'); // let smallImg = document.createElement('img')
+// // 必须 require 进来
+// smallImg.src = require('../images/small.png')
+// document.body.appendChild(smallImg)
+
+// let bigImg = document.createElement('img')
+// bigImg.src = require('../images/big.jpg')
+// document.body.appendChild(bigImg)
+
+smallImg.src = __webpack_require__(4);
+document.body.appendChild(smallImg);
 
 /***/ }),
 /* 3 */
 /***/ (function(module, exports) {
 
-module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAAQlBMVEUAAAAxlu08m+75/P+OxvWBv/TY6/zs9v252/mx1/it1fh6u/NXqfBGoe/i8PxpsvKk0ffk8f3M5fuazPZutfI1mO19br+2AAAAAXRSTlMAQObYZgAAAKlJREFUKM+F09sOgjAQhOGZaWsrVMHT+7+qiVFYqF3+249NE7KLpVBSFamaSsC+HMUlxbzVQdykwWAY2TSGRSf+afr5Ont5ysx/3+XSHTPXPu9nM3DC2bAygMgeMwJBfVZAYZ9ZkDxOqB5XyGOBHnPPt8uWRdMDuFoXKm1x6xWJjicUOl4Q1Hpafyoid6X5tX6JLHZSNuvQNphlahuPV9FfZP8Mjo/IP8E3q2AGV6KQLmoAAAAASUVORK5CYII="
+// removed by extract-text-webpack-plugin
+module.exports = {"test":"_2-AxcSaQBPXGeJRLE8Ocue"};
 
 /***/ }),
 /* 4 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-module.exports = __webpack_require__.p + "images/big.68802d947c93604509c8a3a45ac127d5.jpg";
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAAQlBMVEUAAAAxlu08m+75/P+OxvWBv/TY6/zs9v252/mx1/it1fh6u/NXqfBGoe/i8PxpsvKk0ffk8f3M5fuazPZutfI1mO19br+2AAAAAXRSTlMAQObYZgAAAKlJREFUKM+F09sOgjAQhOGZaWsrVMHT+7+qiVFYqF3+249NE7KLpVBSFamaSsC+HMUlxbzVQdykwWAY2TSGRSf+afr5Ont5ysx/3+XSHTPXPu9nM3DC2bAygMgeMwJBfVZAYZ9ZkDxOqB5XyGOBHnPPt8uWRdMDuFoXKm1x6xWJjicUOl4Q1Hpafyoid6X5tX6JLHZSNuvQNphlahuPV9FfZP8Mjo/IP8E3q2AGV6KQLmoAAAAASUVORK5CYII="
 
 /***/ })
 /******/ ]);
